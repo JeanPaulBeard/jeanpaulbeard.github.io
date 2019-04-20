@@ -1,72 +1,555 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta content="Jean Paul Beard" name="autor">
-	<meta content="Plantilla OVA" name="description">
-	<meta content="Plantilla, OVA" name="keywords">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimun-scale=1" />
-	<link rel="icon" href="App/img/egg-ova-icon.png" type="image/png">
-	
-	<link rel="stylesheet" type="text/css" href="App/css/style.css">
-	
-	
-	<script src="App/js/modernizr-custom.js"></script>
-	
-	
-	<title>Actividad 2</title>
+  <link rel="icon" href="app/img/jeanpaul_logo_128.png" type="image/png">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="app/css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0277bd" />
+  <title>Jean Paul Beard</title>
 </head>
 
 <body>
-	<header>
-		<div class="center">
-			<a href="#" title="Plantilla OVA">
-				<img src="App/img/logoUNAD.png" alt="Unad">
-			</a>
-		</div>
-		
-	</header>
-	<nav>
-		<div class="center">
-			<ul>
-				<li>Menu 1</li>
-				<li>Menu 2</li>
-				<li>Menu 3</li>
-				<li>Menu 4</li>
-			</ul>
-		</div>
-	</nav>
-	
-	<section class="main">
-		<div class="cuadros-x3">
-			<div>Cuadro 1</div>
-			<div>Cuadro 2</div>
-			<div>Cuadro 3</div>
-		</div>
-		<div class="slider">
-			<ul>
-				<li style="display:block;">Slide 1</li>
-				<li>Slide 2</li>
-				<li>Slide 3</li>
-			</ul>
-		</div>
-		<div class="cuadros-x2">
-			<div>
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/WA_gZ9zzEGo" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<div>
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/N7Aabg9GnBo" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-		
-	</section>
-	
-	
-	<footer>
-		<div class="center">
-			Pie de pagina
-		</div>
-		
-	</footer>
+  <a name="top" id="top"></a>
+  <nav class="transparent">
+    <div class="nav-wrapper container">
+      <a href="#top" class="brand-logo consolas page-scroll">
+        <img src="app/img/jeanpaul_logo_40.png">
+        <span class="blue-grey-text page-scroll">JEAN</span>
+        <span class="light-blue-text accent-4">PAUL</span>
+      </a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#services" class="blue-grey-text page-scroll">Servicios</a></li>
+
+        <li><a href="#support" class="blue-grey-text page-scroll">Soporte</a></li>
+        <li><a href="#consultory" class="blue-grey-text page-scroll">Asesor&iacute;as</a></li>
+
+        <li><a href="#development" class="blue-grey-text page-scroll">Desarrollo</a></li>
+        <li><a href="#vps" class="blue-grey-text page-scroll">VPS y Remote App</a></li>
+
+        <li><a href="#contact" class="blue-grey-text page-scroll">Contacto</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><br></li>
+        <li><a href="#services" class="blue-grey-text page-scroll">Servicios</a></li>
+
+        <li><a href="#support" class="blue-grey-text page-scroll">Soporte</a></li>
+        <li><a href="#consultory" class="blue-grey-text page-scroll">Asesor&iacute;as</a></li>
+        <li><a href="#development" class="blue-grey-text page-scroll">Desarrollo</a></li>
+        <li><a href="#vps" class="blue-grey-text page-scroll">VPS y Remote App</a></li>
+
+        <li><a href="#contact" class="blue-grey-text page-scroll">Contacto</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger light-blue-text text-darken-3"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container m-h500">
+        <h1 class="header hide-on-med-and-down">&nbsp;</h1>
+        <h1 class="header center blue-grey-text text-lighten-5">Consultory</h1>
+        <h1 class="header center blue-grey-text text-lighten-5">Development and support</h1>
+        <!--
+                    Mod1
+                    Comentario para <git></git>
+        -->
+
+        <div class="row center">
+          <h5 class="header col s12 light">&nbsp;</h5>
+        </div>
+        <div class="row center">
+          <a href="#services" class="btn-large waves-effect waves-light light-blue darken-3 bt-page-scroll">VER M&Aacute;S</a>
+        </div>
+      </div>
+    </div>
+    <div class="parallax video-opacity grey darken-4">
+      <video autoplay loop muted poster>
+        <source src="app/video/servers.webm" type="video/webm" />
+        <source src="app/video/servers.mp4" type="video/mp4">
+        <img src="app/img/ride_forest.jpg">
+      </video>
+
+
+    </div>
+  </div>
+
+  <!-- Servicios	-->
+  <div class="container">
+    <a name="services" id="services"></a>
+    <div class="section">
+      <div class="separador_100"></div>
+      <div class="row">
+        <div class="col s12 m6 l3">
+          <a href="#support" class="page-scroll">
+            <div class="icon-block hoverable">
+              <h2 class="center light-blue-text text-darken-3">
+                <i class="material-icons">settings_applications</i>
+              </h2>
+              <h5 class="grey-text text-darken-3 center">Soporte</h5>
+              <p class="grey-text center">Administraci&oacute;n de servidores y bases de datos, instalaci&oacute;n y mantenimiento de redes y computadores.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col s12 m6 l3">
+          <a href="#consultory" class="page-scroll">
+            <div class="icon-block hoverable">
+              <h2 class="center light-blue-text text-darken-3">
+                <i class="material-icons">done_all</i>
+              </h2>
+              <h5 class="grey-text text-darken-3 center">Asesor&iacute;a tecnol&oacute;gica</h5>
+              <p class="grey-text center">Le ayudamos a elegir la mejor opci&oacute;n en equipos e infraestructura tecnol&oacute;gica.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col s12 m6 l3">
+          <a href="#development" class="page-scroll">
+            <div class="icon-block hoverable">
+              <h2 class="center light-blue-text text-darken-3">
+                <i class="material-icons">developer_board</i>
+              </h2>
+              <h5 class="grey-text text-darken-3 center">Desarrollo</h5>
+              <p class="grey-text center">Aplicaciones web y de escritorio, paginas Web e implementaci&oacute;n de e-comerce.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col s12 m6 l3">
+          <a href="#vps" class="page-scroll">
+            <div class="icon-block hoverable">
+              <h2 class="center light-blue-text text-darken-3">
+                <i class="material-icons">storage</i>
+              </h2>
+              <h5 class="grey-text text-darken-3 center">Servidores virtuales</h5>
+              <p class="grey-text center">Soluciones de hardware virtualizado y Remote App a la medida de sus necesidades.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 center">
+          <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="PHP Developer">
+            <img src="app/img/php_32.png" alt="PHP Developer">
+            PHP
+          </div>
+          <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="HTML5 Developer">
+            <img src="app/img/html_32.png" alt="HTML5 Developer">
+            HTML5
+          </div>
+          <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="CSS Developer">
+            <img src="app/img/css_32.png" alt="CSS Developer">
+            CSS
+          </div>
+          <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="JavaScript Developer">
+            <img src="app/img/js_32.png" alt="JavaScript Developer">
+            JavaScript
+          </div>
+          <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="VB.Net Developer">
+            <img src="app/img/vsnet_32.png" alt="VB.Net Developer">
+            VB.Net
+          </div>
+          <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="C#.Net Developer">
+            <img src="app/img/c_32.png" alt="C#.Net Developer">
+            C#.Net
+          </div>
+          <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="Manager MySQL database">
+            <img src="app/img/mysql_32.png" alt="Manager MySQL database">
+            MySQL
+          </div>
+          <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="Manager MS SQL database">
+            <img src="app/img/mssql_32.png" alt="Manager MS SQL database">
+            MS SQL Server
+          </div>
+          <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="PACS Server configuration">
+            <img src="app/img/img_server_32.png" alt="PACS Server configuration">
+            Dicom PACS
+          </div>
+
+          <a href="http://stackoverflow.com/users/6735632/jean-paul-beard/" target="_blank">
+            <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="GitHub">
+              <img src="app/img/github_32_2.png" alt="GitHub">
+              GitHub
+            </div>
+          </a>
+          <a href="https://github.com/JeanPaulBeard/Serial-to-keyboard/	" target="_blank">
+            <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="Stack Overflow">
+              <img src="app/img/stackoverflow_32.png" alt="Stack Overflow">
+              Stack Overflow
+            </div>
+          </a>
+
+        </div>
+
+
+      </div>
+      <div class="separador_100"></div>
+    </div>
+  </div>
+
+  <!-- Soporte	-->
+  <div class="blue lighten-5">
+    <div class="container">
+      <a name="support" id="support"></a>
+      <div class="section">
+        <h2 class="center">Soporte</h2>
+        <div class="row">
+          <div class="col s12 l4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text text-darken-3">
+                <i class="material-icons">cast</i>
+              </h2>
+              <h5 class="center">Asistencia remota</h5>
+              <p class="light center">Sus problemas tecnol&oacute;gicos requieren soluciones inmediatas.</p>
+            </div>
+          </div>
+          <div class="col s12 l4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text text-darken-3">
+                <i class="material-icons">build</i>
+              </h2>
+              <h5 class="center">Mantenimiento</h5>
+              <p class="light center">Mantenimiento preventivo y correctivo servidores y computadores.</p>
+            </div>
+          </div>
+          <div class="col s12 l4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text text-darken-3">
+                <i class="material-icons">device_hub</i>
+              </h2>
+              <h5 class="center">Redes</h5>
+              <p class="light center">Instalacion y soporte de cableado estructurado y redes inal&aacute;mbricas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="separador_100"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Asesorías	-->
+  <div class="parallax-container img-opacity">
+    <a name="consultory" id="consultory"></a>
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center hide-on-med-and-down"><br></h1>
+        <h1 class="header center blue-grey-text text-lighten-5">Asesor&iacute;a tecnol&oacute;gica</h1>
+      </div>
+    </div>
+    <div class="parallax">
+      <img src="app/img/it-consulting.jpg">
+    </div>
+  </div>
+  <div class="blue lighten-5">
+    <div class="container">
+      <div class="section">
+        <div class="separador_50"></div>
+        <div class="row">
+          <div class="col s12">
+            <h5 class="light">
+              Asesoramiento tecnol&oacute;gico, de manejo y adquisici&oacute;n de redes, servidores, computadores, impresoras y dem&aacute;s equipos necesarios para el correcto desempe&ntilde;o de su empresa.
+            </h5>
+          </div>
+        </div>
+        <div class="separador_100"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desarrollo	-->
+  <div>
+    <div class="container">
+      <a name="development" id="development"></a>
+      <div class="section">
+        <h2 class="center">Desarrollo</h2>
+        <div class="row">
+          <div class="col s12 l5">
+            <div class="icon-block">
+              <h2 class="center light-blue-text text-darken-3">
+                <a href="http://tecg3.com/" target="_blank">
+                  <img src="app/img/tecg3_ing_256.png" alt="TecG3">
+                </a>
+              </h2>
+            </div>
+          </div>
+          <div class="col s12 l7">
+            <h5>&nbsp;</h5>
+            <div class="icon-block">
+              <h5 class="light center">Dise&ntilde;o y programaci&oacute;n de apliacaciones Web, de escritorio y m&oacute;viles a la medida de sus necesidades.</h5>
+            </div>
+            <div class="icon-block">
+              <h5 class="light center">Visitenos en <a href="https://tecg3.com/" target="_blank">tecg3.com</a>.</h5>
+            </div>
+            <h5>&nbsp;</h5>
+
+            <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="PHP Developer">
+              <img src="app/img/php_32.png" alt="PHP Developer">
+              PHP
+            </div>
+            <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="HTML5 Developer">
+              <img src="app/img/html_32.png" alt="HTML5 Developer">
+              HTML5
+            </div>
+            <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="CSS Developer">
+              <img src="app/img/css_32.png" alt="CSS Developer">
+              CSS
+            </div>
+            <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="JavaScript Developer">
+              <img src="app/img/js_32.png" alt="JavaScript Developer">
+              JavaScript
+            </div>
+            <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="VB.Net Developer">
+              <img src="app/img/vsnet_32.png" alt="VB.Net Developer">
+              VB.Net
+            </div>
+            <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="C#.Net Developer">
+              <img src="app/img/c_32.png" alt="C#.Net Developer">
+              C#.Net
+            </div>
+            <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="Manager MySQL database">
+              <img src="app/img/mysql_32.png" alt="Manager MySQL database">
+              MySQL
+            </div>
+            <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="Manager MS SQL database">
+              <img src="app/img/mssql_32.png" alt="Manager MS SQL database">
+              MS SQL Server
+            </div>
+            <div class="chip tooltipped" data-position="top" data-delay="50" data-tooltip="PACS Server configuration">
+              <img src="app/img/img_server_32.png" alt="PACS Server configuration">
+              Dicom PACS
+            </div>
+
+          </div>
+        </div>
+        <div class="separador_100"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VPS	-->
+  <div class="parallax-container img-opacity">
+    <a name="vps" id="vps"></a>
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center hide-on-med-and-down"><br></h1>
+        <h1 class="header center blue-grey-text text-lighten-5">Servidores virtuales y Remote App</h1>
+      </div>
+    </div>
+    <div class="parallax">
+      <img src="app/img/servers_1.jpg">
+    </div>
+  </div>
+  <div class="blue lighten-5">
+    <div class="container">
+      <div class="section">
+        <div class="separador_50"></div>
+        <div class="row">
+          <div class="col s12">
+            <h5 class="light center">Alquiler de servidores virtuales ajustados a sus necesidades y presupuesto.</h5>
+          </div>
+        </div>
+        <div class="separador_50"></div>
+        <div class="row center">
+          <a href="login.php" id="more" class="btn-large waves-effect waves-light light-blue darken-3">INGRESAR A LA ZONA DE CLIENTES</a>
+        </div>
+
+
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text text-darken-3">
+                <i class="material-icons">flash_on</i>
+              </h2>
+              <h5 class="center">Despliegue r&aacute;pido</h5>
+
+              <p class="light">Basta con unos pocos para obtener, personalizar y poner en marcha su equipo virtualizado.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text text-darken-3">
+                <i class="material-icons">settings</i>
+              </h2>
+              <h5 class="center">Configurable</h5>
+
+              <p class="light">Elija la cantidad de memoria RAM, procesadores, nucleos y tama&ntilde;o del disco duro o SSD que
+                requiere, ademas puede modificar la configuraci&oacute;n.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text text-darken-3">
+                <i class="material-icons">group</i>
+              </h2>
+              <h5 class="center">Remote App</h5>
+
+              <p class="light">Las aplicaciones virtualizadas se integran a la perfecci&oacute;n en su
+                escritorio como tal como cualquier otra aplicaci&oacute;n local, ademas ofrerce mejor rendimiento.</p>
+            </div>
+          </div>
+        </div>
+        <div class="separador_50"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Contacto	-->
+  <div class="container">
+    <a name="contact" id="contact"></a>
+    <div class="separador_100"></div>
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="col l6 s12">
+            <div class="row">
+              <div class="col s6 l6">
+                <div class="icon-block">
+                  <h2 class="light-blue-text text-darken-3">
+                    <i class="material-icons">location_on</i>
+                  </h2>
+                  <h5>Ubicaci&oacute;n</h5>
+                  <p class="light">Tunja, Boyac&aacute;, Colombia.</p>
+                </div>
+              </div>
+              <div class="col s6 l6">
+                <div class="icon-block">
+                  <h2 class="light-blue-text text-darken-3">
+                    <i class="material-icons">email</i>
+                  </h2>
+                  <h5>Email</h5>
+                  <p class="light">
+                    <a class="black-text" href="mailto:jeanpaul@tecg3.com">jeanpaul@tecg3.com</a>
+                    <br>
+                    <a class="black-text" href="mailto:adlasnv@gmail.com">adlasnv@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s6 l6">
+                <div class="icon-block">
+                  <h2 class="light-blue-text text-darken-3">
+                    <i class="material-icons">settings_phone</i>
+                  </h2>
+                  <h5>Tel&eacute;fono</h5>
+                  <p class="light">
+                    <a class="black-text" href="tel:+57 321 435 7527">+57 321 435 7527</a>
+                    <br>
+                    <a class="black-text" href="tel:+57 322 222 2006">+57 322 222 2006</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col s6 l6">
+                <div class="icon-block">
+                  <h2 class="light-blue-text text-darken-3">
+                    <i class="material-icons">thumb_up</i>
+                  </h2>
+                  <h5>Redes sociales</h5>
+                  <p class="light">@jeanpaulbeard #jeanpaulbeard</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l6 s12">
+            <div class="row">
+              <div class="col s12">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix right">account_circle</i>
+                  <input id="f_names" type="text" class="validate">
+                  <label for="f_names">Nombres</label>
+                </div>
+              </div>
+              <div class="col s12">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix right">email</i>
+                  <input id="f_mail" type="text" class="validate">
+                  <label for="f_mail">Email</label>
+                </div>
+              </div>
+              <div class="col s12">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix right">message</i>
+                  <textarea id="f_messaje" class="materialize-textarea validate"></textarea>
+                  <label for="f_messaje">Mensaje</label>
+                </div>
+              </div>
+              <div class="col s12">
+                <button class="btn waves-effect waves-light light-blue darken-3 right" type="button" name="send" id="send">Enviar mensaje</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+    </div>
+    <div class="separador_100"></div>
+  </div>
+
+  <footer class="page-footer light-blue darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l2 s12">
+          <h5 class="light-blue-text text-lighten-3">Soporte</h5>
+          <ul>
+            <li class="light-blue-text text-lighten-3 light">Administraci&oacute;n de servidores y bases de datos, instalaci&oacute;n y mantenimiento de redes y computadores.</li>
+          </ul>
+        </div>
+        <div class="col l2 s12">
+          <h5 class="light-blue-text text-lighten-3">Asesor&iacute;a tecnol&oacute;gica</h5>
+          <ul>
+            <li class="light-blue-text text-lighten-3 light">Le ayudamos a elegir la mejor opci&oacute;n en equipos e infraestructura tecnol&oacute;gica.</li>
+          </ul>
+        </div>
+        <div class="col l2 s12">
+          <h5 class="light-blue-text text-lighten-3">Desarrollo</h5>
+          <ul>
+            <li class="light-blue-text text-lighten-3 light">Aplicaciones web y de escritorio, paginas Web e implementaci&oacute;n de e-comerce.</li>
+          </ul>
+        </div>
+        <div class="col l2 s12">
+          <h5 class="light-blue-text text-lighten-3">Servidores virtuales</h5>
+          <ul>
+            <li class="light-blue-text text-lighten-3 light">Soluciones de hardware virtualizado y Remote App a la medida de sus necesidades.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col l8 s12">
+            Developed by: Jean Paul Beard &copy; -
+            <a class="grey-text text-lighten-2" target="_blank" href="http://jeanpaul.co">jeanpaul.cf</a>
+          </div>
+          <div class="col l4 s12">
+            Made by <a class="grey-text text-lighten-2" href="http://materializecss.com">Materialize</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--Import jQuery before materialize.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="app/js/all.js"></script>
+  <script type="text/javascript" src="app/js/init.js"></script>
+  <script>
+
+  </script>
 </body>
+
 </html>

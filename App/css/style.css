@@ -1,212 +1,323 @@
-/* CSS Document */
-
-/*
-COLORES
-Azul: 	#006680;
-Ocre:	#F2B80D;
-Naranja:#FF5900;
-Verde:	#4DFF00;
-Magenta:#A329CC;
-Cian	#66FFFF;
-
-Gris 2: #B3B3B3;
-
+/* Custom Stylesheet */
+/**
+* Use this file to override Materialize files so you can update
+* the core Materialize files in the future
+*
+* Made By MaterializeCSS.com
 */
-
-*{
-	box-sizing:border-box;
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    position: absolute;
 }
-html, body{
-	margin:0;
-	padding:0;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:14px;
-	color:#444444;
-	background:#FFFFFF;
+::-webkit-scrollbar-track {
+    background: rgba(29, 31, 33, 0.8);
+    -webkit-box-shadow: inset 0 0 1px rgba(29, 31, 33, 0.8);
 }
-body{
-	max-height:100%;
+::-webkit-scrollbar-track:hover {
+    background: rgba(29, 31, 33, 0.7);
 }
-/*Header*/
-header{
-	width:100%;
-	height:60px;
-	margin:20px auto;
-	background:#FFFFFF;
+::-webkit-scrollbar-thumb {
+    background-color: rgba(2, 119, 189, 0.5);
 }
-header a img{
-	height:inherit;
-	height:60px;
-}
-/*Nav*/
-nav{
-	width:100%;
-	height:60px;
-	margin:0 auto;
-	background:#006680;
-}
-nav ul, .slider ul{
-	float:left;
-	width:100%;
-	height:100%;
-	background:inherit;
-	margin:0;
-	padding:0;
-}
-nav ul li{
-	list-style:none;
-	text-align:-webkit-match-parent;
-	display:block;
-	float:left;
-	height:100%;
-	width:160px;
-	padding:20px 20px;
-	background:inherit;
-	color:#FFFFFF;
-	text-align:center;
-}
-nav ul li:hover{
-	cursor:pointer;
-	background:#F2B80D;
-	color:#000000;
-}
-/*Main*/
-.main{
-	width:1000px;
-	height:auto;
-	min-height:860px;
-	margin:20px auto;
-	background:#FFFFFF;
-	box-shadow:0px 0px 10px #B3B3B3;
-}
-/*Cuadros x2*/
-.cuadros-x2{
-	float:left;
-	width:100%;
-	height:300px;
-	padding:20px;
-}
-.cuadros-x2 div{
-	float:left;
-	width:49%;
-	height:100%;
-	background:#B3B3B3;
-	margin:0;
-	padding:20px;
-}
-.cuadros-x2 div:first-child{
-	margin-right:1%;
-}
-.cuadros-x2 div:last-child{
-	float:right;
-	margin-left:1%;
-}
-
-/*Cuadros x3*/
-.cuadros-x3{
-	float:left;
-	width:100%;
-	height:200px;
-	padding:20px;
-}
-.cuadros-x3 div{
-	float:left;
-	width:32%;
-	height:100%;
-	background:#B3B3B3;
-	margin:0 2%;
-	padding:20px;
-}
-.cuadros-x3 div:first-child{
-	margin:0;
-}
-.cuadros-x3 div:last-child{
-	float:right;
-	margin:0;
-}
-
-/*Slider*/
-.slider{
-	float:left;
-	width:100%;
-	height:350px;
-}
-.slider ul{
-	float:left;
-	width:100%;
-	height:350px;
-}
-.slider ul li{
-	list-style:none;
-	text-align:-webkit-match-parent;
-	display:none;
-	float:left;
-	height:100%;
-	width:100%;
-	padding:20px 20px;
-	background:#F2B80D;
-	color:#FFFFFF;
-	text-align:center;
-	opacity:0.4;
-}
-.slider ul li:hover{
-	cursor:default;
-/*	background:inherit;*/
-	color:inherit;
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(2, 119, 189, 1);
 }
 
 
-
-
-/*Otros*/
-.center{
-	width:1000px;
-	height:inherit;
-	margin:0 auto;
-	background:inherit;
+@font-face {
+    font-family:"Consolas";
+    src:local(Consolas Regular), url("../fonts/consolas/consola.ttf");
+    src:url("../fonts/consolas/consola.ttf");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:"Consolas";
+    src:local(Consolas Bold), url("../fonts/consolas/consolab.ttf");
+    src:url("../fonts/consolas/consolab.ttf");
+    font-weight:bold;
+    font-style:normal;
+}
+@font-face {
+    font-family:"Consolas";
+    src:local(Consolas Italic), url("../fonts/consolas/consolai.ttf");
+    src:url("../fonts/consolas/consolai.ttf");
+    font-weight:normal;
+    font-style:italic;
+}
+@font-face {
+    font-family:"Consolas";
+    src:local(Consolas Italic Bold), url("../fonts/consolas/consolaz.ttf");
+    src:url("../fonts/consolas/consolaz.ttf");
+    font-weight:bold;
+    font-style:italic;
+}
+.consolas{
+    font-family:"Consolas", Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+}
+.parallax img{
+    width: 100%;
+}
+.nav-fixed{
+    position: fixed;
+    background-color: #0277bd !important;
+    z-index: 9999;
+}
+.nav-fixed .nav-mobile li a{
+    color: #FFFFFF !important;
+}
+.separador_100{
+    height: 100px;
+    padding: 50px 0;
+}
+.separador_50{
+    height: 50px;
+    padding: 25px 0;
+}
+.m-h500{
+    height: 500px;
+}
+.w100per{
+    width: 100%;
 }
 
+.jp_icons{
+    float: left;
+    width: 32px;
+    height: 32px;
+    padding: 16px;
+}
+.jp_icons.stackoverflow{
+    background-image: url("../img/stackoverflow_32_2.png");
+    background-repeat: no-repeat;;
+}
+.jp_icons.stackoverflow:hover{
+    background-image: url("../img/stackoverflow_32.png");
+    background-repeat: no-repeat;;
+}
+.jp_icons.github{
+    background-image: url("../img/github_32_2.png");
+    background-repeat: no-repeat;;
+}
+.jp_icons.github:hover{
+    background-image: url("../img/github_32.png");
+    background-repeat: no-repeat;;
+}
 
 
-a{
-	color:#666;
-	text-decoration:none;
+nav ul a,
+nav .brand-logo {
+    /*	color:#444;*/
 }
-a:hover, a:visited{
-	text-decoration:underline;
-}
-
-/*Footer*/
-footer{
-	width:100%;
-	height:100px;
-	margin:0 auto;
-	padding:20px 0px;
-	background:#000000;
-	color:#FFFFFF;
+nav ul a,
+nav .brand-logo img{
+    margin:0 0 -10px 0;
 }
 
-/* aplica para 640px o menos ancho	*/
-@media screen and (max-width:640px){
-	
+p {
+    line-height: 2rem;
 }
-/* min-width:1000px aplica para 1000px o mas ancho	*/
-@media screen and (min-width:1000px){
-	
+.button-collapse {
+    color: #26a69a;
 }
-/* aplica para 1000px o menos ancho	*/
-@media screen and (max-width:1000px){
-	
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
 }
-/* aplica para 900px o menos ancho	*/
-@media screen and (max-width:900px){
-	
+.parallax-container .section {
+    width: 100%;
 }
-/* aplica para 640px o menos ancho	*/
-@media screen and (max-width:640px){
-	
+
+.login{
+    max-width: 400px;
 }
-/* aplica para 480px o menos ancho	*/
-@media screen and (max-width:480px){
-	
+
+@media only screen and (max-width : 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
 }
+
+@media only screen and (max-width : 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+    nav .nav-wrapper{
+        margin: 0;
+        text-align: center;
+    }
+    nav .nav-wrapper .brand-logo{
+        width: calc(100% - 70px);
+    }
+
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+
+.video-opacity video{
+    filter:opacity(30%);
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -100;
+    right: 0;
+    bottom: 0;
+    background: url(../img/ride_forest.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.img-opacity img{
+    filter: brightness(0.3);
+    -webkit-filter: brightness(0.3);
+}
+
+
+
+/*  VPS */
+.vps{
+    float: left;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.14);
+}
+.vps:hover{
+    background-color: #e1f5fe;
+    cursor: pointer;
+}
+.vps div{
+    float: left;
+}
+.vps .so-icon{
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.vps .so-name, .vps .vps-name{
+    width: calc(100% - 48px);
+    padding: 2px 10px;
+}
+.vps .vps-name{
+    font-weight: bolder;
+}
+
+.vps .so-icon.linux{
+    background-image: url(../img/icon-linux.png);
+}
+.vps .so-icon.windows7{
+    background-image: url(../img/icon-windows7.png);
+}
+.vps .so-icon.windows10{
+    background-image: url(../img/icon-windows10.png);
+}
+.vps .so-icon.centos{
+    background-image: url(../img/icon-centos.png);
+}
+.vps .so-icon.ubuntu{
+    background-image: url(../img/icon-ubuntu.png);
+}
+
+
+/*  RDP */
+.rdps{
+    border-left: 1px solid rgba(0,0,0,0.14);
+}
+.rdp{
+    float: left;
+    width: 20%;
+    min-width: 110px;
+    height: 110px;
+    max-height: 110px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    color: #000;
+}
+.rdp:hover{
+    background-color: #e1f5fe;
+    cursor: pointer;
+}
+.rdp:hover::before{
+    font-family: 'Material Icons';
+    content: "cloud_download";
+    -webkit-font-feature-settings: 'cloud_download';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 6em;
+    opacity: 0.5;
+    line-height: 1;
+    color: #0277bd;
+    z-index: 1;
+}
+.rdp div{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.rdp .icon{
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.rdp .name, .rdp .rdp-name{
+    width: 100%;
+    padding: 2px 10px;
+}
+.rdp .rdp-name{
+    font-weight: bolder;
+}
+
+.rdp .icon.word{
+    background-image: url(../img/icon-word.png);
+}
+.rdp .icon.excel{
+    background-image: url(../img/icon-excel.png);
+}
+.rdp .icon.powerpoint{
+    background-image: url(../img/icon-powerpoint.png);
+}
+.rdp .icon.notepad{
+    background-image: url(../img/icon-notepad.png);
+}
+.rdp .icon.chrome{
+    background-image: url(../img/icon-chrome.png);
+}
+.rdp .icon.contapyme{
+    background-image: url(../img/icon-contapyme.png);
+}
+.rdp .icon.firefox{
+    background-image: url(../img/icon-firefox.png);
+}
+.rdp .icon.photoshop{
+    background-image: url(../img/icon-photoshop.png);
+}
+.rdp .icon.illustrator{
+    background-image: url(../img/icon-illustrator.png);
+}
+.rdp .icon.AccountHub{
+    background-image: url(../img/icon-AccountHub.png);
+}
+
